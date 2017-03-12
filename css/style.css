@@ -1,0 +1,8 @@
+.container-fluid {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.keyboard, .actions {
+	margin-bottom: 20px;
+}

@@ -1,0 +1,10 @@
+version: '2'
+services:
+    frontend:
+        image: php:7.1-apache
+        container_name: darts-frontend
+        volumes:
+            - /etc/localtime:/etc/localtime:ro
+            - ..:/var/www/html
+        ports:
+            - 80:80
