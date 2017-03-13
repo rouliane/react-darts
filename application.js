@@ -6,12 +6,12 @@ var playerList = [
 ];
 
 var cutThroatHits = [
-    {'score': 20, 'label': 20},
-    {'score': 19, 'label': 19},
-    {'score': 18, 'label': 18},
-    {'score': 17, 'label': 17},
-    {'score': 16, 'label': 16},
-    {'score': 15, 'label': 15},
+    {'score': 6, 'label': 6},
+    {'score': 5, 'label': 5},
+    {'score': 4, 'label': 4},
+    {'score': 3, 'label': 3},
+    {'score': 2, 'label': 2},
+    {'score': 1, 'label': 1},
     {'score': 25, 'label': 'Bull'},
 ];
 

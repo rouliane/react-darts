@@ -46,9 +46,11 @@ class PlayerRow extends React.Component
 {
 	render()
 	{
-		return (
-			<tr>
-				<td className="text-right">{this.props.player.name} {this.props.player.isCurrentPlayer ? ' <' : ''}</td>
+	    var cssClass = this.props.player.isCurrentPlayer ? 'current' : 'inactive';
+	    return (
+	        
+			<tr className={cssClass}>
+				<td className="text-right">{this.props.player.name}</td>
 				{this.props.hits.map(function(hit) {
 					var playerHitNumber = 0;
 					this.props.player.hits.forEach(function(playerHit) {
@@ -58,7 +60,24 @@ class PlayerRow extends React.Component
 						}
 					});
 
-					return (<td className="text-center">{playerHitNumber > 0 ? playerHitNumber : ''}</td>);
+					
+					var content = '';
+					switch(playerHitNumber)
+					{
+					    case 1:
+					        // content = '\u{1F949}';
+					        content = '_';
+					        break;
+					    case 2:
+					        // content = '\u{1F948}';
+					        content = '\\';
+					        break;
+					    case 3:
+					        // content = '\u{1F947}';
+					        content = 'X';
+					        break;
+					}
+					return (<td className="text-center">{content}</td>);
 				}, this)}
 				<td className="text-center">{this.props.player.points}</td>
 			</tr>
