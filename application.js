@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Game from './components/components.jsx';
+import CutThroatGame from './components/cricket-cut-throat.jsx';
 
 var playerList = [
     //{'name': 'Player 1', points: 0, isCurrentPlayer: false, 'hits': [{'hit': {'score':15}}, {'hit': {'score':20}}, {'hit': {'score':15}}]},
@@ -20,6 +20,6 @@ var cutThroatHits = [
 ];
 
 ReactDOM.render(
-    <Game players={playerList} hits={cutThroatHits} />,
+    <CutThroatGame players={playerList} hits={cutThroatHits} />,
     document.getElementById('container')
 );
