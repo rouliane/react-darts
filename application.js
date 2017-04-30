@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Game from './components/components.jsx';
+
 var playerList = [
     //{'name': 'Player 1', points: 0, isCurrentPlayer: false, 'hits': [{'hit': {'score':15}}, {'hit': {'score':20}}, {'hit': {'score':15}}]},
     {'name': 'Player 1', points: 0, isCurrentPlayer: false, 'hits': []},

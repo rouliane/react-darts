@@ -3,3 +3,8 @@
 .project
 .buildpath
 .settings/
+
+# Webpack files
+# =============
+node_modules/
+build/

@@ -1,3 +1,5 @@
+import React from 'react';
+
 class Actions extends React.Component
 {
 	render()
@@ -112,7 +114,7 @@ class Board extends React.Component
 	}
 }
 
-class Game extends React.Component
+export default class Game extends React.Component
 {
 	constructor()
 	{
